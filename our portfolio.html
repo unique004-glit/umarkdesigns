@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>Portifolio</title>
+    <style>
+        * {
+            min-width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+            animation: fadeIn 1s ease-in-out;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+        }
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+        .portfolio-item img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .portfolio-item h3 {
+            margin-top: 10px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .portfolio-item p {
+            margin-top: 5px;
+        }
+        .portfolio-item:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateX( 5px);
+            transition: all 0.7s ease;
+        }
+        @media (max-width: 768px) {
+            .portfolio-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+    </style>
+
+
+    
+</head>
+<body>
+     <section>
+    <h1>Our Portfolio</h1>
+    <p>Welcome to our portfolio page! Here, you'll find a curated selection of our best work, showcasing our expertise and creativity across various projects. We take pride in delivering high-quality designs that meet our clients' needs and exceed their expectations.</p>
+    <div class="portfolio-gallery" onclick="redirectToContact()">
+        <div class="portfolio-item">
+            <img src="business flyer 4.jpg" alt="Project 1">
+            <h3>Business Flyers</h3>
+            <p>This is our buisness flyer if you like it or you want something better don't hesitate to contact us. Just click this protfolio item you will be redirected to our contact page thank you.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="sunday youtube mockup flyer.jpg" alt="Project 2">
+            <h3>Church Flyer</h3>
+            <p>If you are intrested in this kind of desings or something better for your church, don't hesitate to contact us by clicking this portfolio item you will be redirected to our contact page.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="kingsley kitchen.jpg"alt="Project 3">
+            <h3>Brand Flyers</h3>
+            <p>If you are intrested in this kind of desings or something better for your company or brand, don't hesitate to contact us by clicking this portfolio item you will be redirected to our contact page.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="christmas youtube mockup design.jpg" alt="Project 4">
+            <h3>Season Greetings</h3>
+            <p>If you are intrested in christmas,new year and season greetings desings just click this portfolio item you will be redirected to our contact page thank you.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+         <div class="portfolio-item">
+            <img src="orange.jpg" alt="Project 5" height="200" width="150">
+            <h3>Advertisment Flyer</h3>
+            <p>If you are intrested in brands,company and buisnessess Advertisment flyers just click this portfolio item you will be redirected to our contact page thank you.</p>
+         </div>
+            <div class="portfolio-item">
+                <img src="BRAND.jpg" alt="Project 6">
+                <h3>Brand Flyers</h3>
+                <p>If you are intrested in this kind of desings or something better for your company or brand, don't hesitate to contact us by clicking this portfolio item you will be redirected to our contact page.</p>
+    </div>
+     <div class="portfolio-item">
+        <img src="cokexmorocco.jpg" alt="...">
+        <h3>Brand Ambassador</h3>
+           <p>If you are intrested in this kind of desings or something better for your company or brand, don't hesitate to contact us by clicking this portfolio item you will be redirected to our contact page.</p>
+
+     </div>
+
+     </section>
+       <div class="footer">
+        <div class="footer-item text-center">
+            <p>&copy; 2026. All Rights Reserved. <br>
+            Built by umark's Designs with <span class="text-primary">&#9829;</span>
+</p>
+        </div>
+       </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+        // You can add JavaScript here if needed for interactivity or animations.
+        // Example:
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(`You clicked on (${item.querySelector('h3').textContent}) you will be redirected to our contact page.   `);
+            });
+        });
+
+        function redirectToContact() {
+            window.location.href = "contact.html";
+        }
+
+     </script>
+</body>
+</html>
